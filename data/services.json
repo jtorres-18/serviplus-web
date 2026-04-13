@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "name": "Web Development",
+    "category": "Development",
+    "price": "$2,500",
+    "rating": 4.9,
+    "reviewCount": 127,
+    "cardSummary": "Professional website development with modern technologies",
+    "description": "Get a fully responsive, modern website built with the latest technologies. Our team specializes in React, Next.js, and other cutting-edge frameworks to deliver high-performance web applications tailored to your business needs. We focus on clean code, SEO optimization, and user experience.",
+    "image": "img/featured-1.jpg",
+    "included": [
+      "Professional service delivery",
+      "Unlimited revisions",
+      "24/7 customer support",
+      "Money-back guarantee"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mobile App Design",
+    "category": "Design",
+    "price": "$1,800",
+    "rating": 4.8,
+    "reviewCount": 94,
+    "cardSummary": "Beautiful and intuitive mobile app interfaces",
+    "description": "Beautiful and intuitive mobile app interfaces. User flows, high-fidelity screens, and design systems that translate smoothly into development handoff.",
+    "image": "img/featured-2.jpg",
+    "included": [
+      "Professional service delivery",
+      "Unlimited revisions",
+      "24/7 customer support",
+      "Money-back guarantee"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "SEO Optimization",
+    "category": "Marketing",
+    "price": "$800",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "cardSummary": "Boost your search engine rankings",
+    "description": "Boost your search engine rankings with technical SEO, content structure, and measurable improvements you can track over time.",
+    "image": "img/featured-3.jpg",
+    "included": [
+      "Professional service delivery",
+      "Unlimited revisions",
+      "24/7 customer support",
+      "Money-back guarantee"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Tutorías y refuerzo académico virtual",
+    "category": "Educación",
+    "price": "Desde $45.000 COP / sesión",
+    "rating": 4.6,
+    "reviewCount": 48,
+    "cardSummary": "Sesiones en vivo personalizadas en áreas STEM y competencias digitales.",
+    "description": "Sesiones en vivo personalizadas en áreas STEM y competencias digitales, con seguimiento y recursos de repaso.",
+    "image": "img/servicio-4.jpg",
+    "included": [
+      "Entrega profesional del servicio",
+      "Material de repaso incluido",
+      "Seguimiento entre sesiones",
+      "Horarios flexibles"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Asesoría legal para emprendedores",
+    "category": "Servicios profesionales",
+    "price": "Desde $320.000 COP",
+    "rating": 4.8,
+    "reviewCount": 32,
+    "cardSummary": "Revisión de contratos y orientación en propiedad intelectual.",
+    "description": "Revisión de contratos, constitución de sociedad y orientación en propiedad intelectual para proyectos digitales.",
+    "image": "img/servicio-5.jpg",
+    "included": [
+      "Revisión documental",
+      "Recomendaciones claras",
+      "Canal de seguimiento",
+      "Confidencialidad"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Branding e identidad visual",
+    "category": "Servicios profesionales",
+    "price": "Desde $1.200.000 COP",
+    "rating": 4.9,
+    "reviewCount": 61,
+    "cardSummary": "Naming, paleta y manual básico de marca.",
+    "description": "Naming, paleta, tipografías y manual básico de marca para alinear tu presencia web y redes sociales.",
+    "image": "img/servicio-6.jpg",
+    "included": [
+      "Propuesta de identidad",
+      "Paleta y tipografías",
+      "Manual básico de marca",
+      "Archivos exportables"
+    ]
+  }
+]

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ServiPlus — Catálogo de servicios digitales</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-home">
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Principal">
+    <a href="index.html" class="logo">ServiPlus</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="services.html">Servicios</a></li>
+      <li><a href="favorites.html">Favoritos</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero-split" aria-labelledby="hero-title">
+    <div class="hero-split-inner">
+      <div class="hero-copy">
+        <h1 id="hero-title">Explora servicios digitales en un solo lugar</h1>
+        <p class="hero-lead">ServiPlus reúne ofertas de tecnología, educación y servicios profesionales para que compares, guardes favoritos y contactes de forma sencilla.</p>
+        <form class="hero-search" action="services.html" method="get" role="search">
+          <label class="visually-hidden" for="q">Buscar servicio</label>
+          <div class="hero-search-field">
+            <svg class="hero-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input type="search" id="q" name="q" placeholder="Buscar en el catálogo..." autocomplete="off">
+          </div>
+          <button type="submit" class="btn-hero-search">Buscar</button>
+        </form>
+        <p class="hero-cta-inline"><a href="services.html" class="link-more">Ver todo el catálogo →</a></p>
+      </div>
+      <div class="hero-media">
+        <img src="img/banner.jpg" width="540" height="640" alt="Ilustración o fotografía representativa de servicios digitales">
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-services section" id="servicios-destacados" aria-labelledby="featured-heading">
+    <div class="section-inner featured-services__inner">
+      <header class="featured-services__head">
+        <div class="featured-services__titles">
+          <h2 id="featured-heading" class="featured-services__title">Featured Services</h2>
+          <p class="featured-services__subtitle">Popular services from top-rated professionals</p>
+        </div>
+        <a href="services.html" class="featured-services__view-all">View All Services <span aria-hidden="true">→</span></a>
+      </header>
+
+      <div class="featured-services__grid">
+        <article class="fs-card">
+          <div class="fs-card__media">
+            <a href="service-detail.html?id=1" class="fs-card__img-link">
+              <img src="img/featured-1.jpg" alt="" width="400" height="220">
+            </a>
+            <button type="button" class="fs-card__fav fav-heart-btn" data-favorite-id="1" aria-pressed="false" aria-label="Guardar en favoritos" onclick="toggleFavoriteFromBtn(this, event)">
+              <svg class="fav-heart-svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path class="fav-heart-path" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="fs-card__body">
+            <div class="fs-card__meta-row">
+              <span class="fs-card__category">Development</span>
+              <span class="fs-card__rating"><span class="fs-card__star" aria-hidden="true">★</span> 4.9 <span class="fs-card__review-count">(127)</span></span>
+            </div>
+            <h3 class="fs-card__name"><a href="service-detail.html?id=1">Web Development</a></h3>
+            <p class="fs-card__desc">Professional website development with modern technologies</p>
+            <div class="fs-card__footer">
+              <span class="fs-card__price">$2,500</span>
+              <a href="service-detail.html?id=1" class="fs-card__details">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="fs-card">
+          <div class="fs-card__media">
+            <a href="service-detail.html?id=2" class="fs-card__img-link">
+              <img src="img/featured-2.jpg" alt="" width="400" height="220">
+            </a>
+            <button type="button" class="fs-card__fav fav-heart-btn" data-favorite-id="2" aria-pressed="false" aria-label="Guardar en favoritos" onclick="toggleFavoriteFromBtn(this, event)">
+              <svg class="fav-heart-svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path class="fav-heart-path" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="fs-card__body">
+            <div class="fs-card__meta-row">
+              <span class="fs-card__category">Design</span>
+              <span class="fs-card__rating"><span class="fs-card__star" aria-hidden="true">★</span> 4.8 <span class="fs-card__review-count">(94)</span></span>
+            </div>
+            <h3 class="fs-card__name"><a href="service-detail.html?id=2">Mobile App Design</a></h3>
+            <p class="fs-card__desc">Beautiful and intuitive mobile app interfaces</p>
+            <div class="fs-card__footer">
+              <span class="fs-card__price">$1,800</span>
+              <a href="service-detail.html?id=2" class="fs-card__details">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="fs-card">
+          <div class="fs-card__media">
+            <a href="service-detail.html?id=3" class="fs-card__img-link">
+              <img src="img/featured-3.jpg" alt="" width="400" height="220">
+            </a>
+            <button type="button" class="fs-card__fav fav-heart-btn" data-favorite-id="3" aria-pressed="false" aria-label="Guardar en favoritos" onclick="toggleFavoriteFromBtn(this, event)">
+              <svg class="fav-heart-svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path class="fav-heart-path" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="fs-card__body">
+            <div class="fs-card__meta-row">
+              <span class="fs-card__category">Marketing</span>
+              <span class="fs-card__rating"><span class="fs-card__star" aria-hidden="true">★</span> 4.7 <span class="fs-card__review-count">(156)</span></span>
+            </div>
+            <h3 class="fs-card__name"><a href="service-detail.html?id=3">SEO Optimization</a></h3>
+            <p class="fs-card__desc">Boost your search engine rankings</p>
+            <div class="fs-card__footer">
+              <span class="fs-card__price">$800</span>
+              <a href="service-detail.html?id=3" class="fs-card__details">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" aria-labelledby="cta-title">
+    <div class="cta-banner-inner">
+      <h2 id="cta-title">¿Listo para encontrar tu próximo servicio?</h2>
+      <p>Navega el catálogo, revisa el detalle de cada oferta y contáctanos cuando quieras dar el siguiente paso.</p>
+      <a href="services.html" class="btn-cta-pro">Explorar servicios</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo logo-footer">ServiPlus</a>
+      <p>Catálogo web para explorar servicios digitales con claridad y buenas prácticas de usabilidad.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Empresa</h3>
+      <ul>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="favorites.html">Favoritos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Soporte</h3>
+      <ul>
+        <li><a href="contact.html">Ayuda</a></li>
+        <li><a href="contact.html">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="social-links" aria-label="Redes sociales">
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="X">X</a>
+    </div>
+    <p class="copyright">© 2026 ServiPlus. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
