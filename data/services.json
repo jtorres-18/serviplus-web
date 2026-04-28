@@ -1,53 +1,53 @@
 [
   {
     "id": 1,
-    "name": "Web Development",
-    "category": "Development",
-    "price": "$2,500",
+    "name": "Desarrollo Web",
+    "category": "Desarrollo",
+    "price": "$2.500.000 COP",
     "rating": 4.9,
     "reviewCount": 127,
-    "cardSummary": "Professional website development with modern technologies",
-    "description": "Get a fully responsive, modern website built with the latest technologies. Our team specializes in React, Next.js, and other cutting-edge frameworks to deliver high-performance web applications tailored to your business needs. We focus on clean code, SEO optimization, and user experience.",
-    "image": "img/featured-1.jpg",
+    "cardSummary": "Desarrollo de sitios web profesionales",
+    "description": "Obtén un sitio web moderno, responsivo y optimizado con las últimas tecnologías. Nuestro equipo se especializa en React, Next.js y otros frameworks de alto rendimiento para ofrecer soluciones adaptadas a tu negocio. Nos enfocamos en código limpio, SEO y experiencia de usuario.",
+    "image": "img/desarrollo_web.jpg",
     "included": [
-      "Professional service delivery",
-      "Unlimited revisions",
-      "24/7 customer support",
-      "Money-back guarantee"
+      "Entrega profesional del servicio",
+      "Revisiones ilimitadas",
+      "Soporte 24/7",
+      "Garantía de devolución de dinero"
     ]
   },
   {
     "id": 2,
-    "name": "Mobile App Design",
-    "category": "Design",
-    "price": "$1,800",
+    "name": "Diseño de aplicaciones móviles",
+    "category": "Diseño",
+    "price": "$1.800.000 COP",
     "rating": 4.8,
     "reviewCount": 94,
-    "cardSummary": "Beautiful and intuitive mobile app interfaces",
-    "description": "Beautiful and intuitive mobile app interfaces. User flows, high-fidelity screens, and design systems that translate smoothly into development handoff.",
-    "image": "img/featured-2.jpg",
+    "cardSummary": "Interfaces móviles atractivas e intuitivas",
+    "description": "Diseñamos interfaces móviles modernas y fáciles de usar. Incluye flujos de usuario, pantallas de alta fidelidad y sistemas de diseño listos para desarrollo.",
+    "image": "img/Diseno_app.jpg",
     "included": [
-      "Professional service delivery",
-      "Unlimited revisions",
-      "24/7 customer support",
-      "Money-back guarantee"
+      "Entrega profesional del servicio",
+      "Revisiones ilimitadas",
+      "Soporte 24/7",
+      "Garantía de devolución de dinero"
     ]
   },
   {
     "id": 3,
-    "name": "SEO Optimization",
+    "name": "Optimización SEO",
     "category": "Marketing",
-    "price": "$800",
+    "price": "$800.000 COP",
     "rating": 4.7,
     "reviewCount": 156,
-    "cardSummary": "Boost your search engine rankings",
-    "description": "Boost your search engine rankings with technical SEO, content structure, and measurable improvements you can track over time.",
-    "image": "img/featured-3.jpg",
+    "cardSummary": "Mejora tu posicionamiento en buscadores",
+    "description": "Optimiza tu presencia en buscadores con SEO técnico, estructura de contenido y mejoras medibles para aumentar tu visibilidad online.",
+    "image": "img/Optimizacion_Seo.jpg",
     "included": [
-      "Professional service delivery",
-      "Unlimited revisions",
-      "24/7 customer support",
-      "Money-back guarantee"
+      "Entrega profesional del servicio",
+      "Revisiones ilimitadas",
+      "Soporte 24/7",
+      "Garantía de devolución de dinero"
     ]
   },
   {
@@ -57,9 +57,9 @@
     "price": "Desde $45.000 COP / sesión",
     "rating": 4.6,
     "reviewCount": 48,
-    "cardSummary": "Sesiones en vivo personalizadas en áreas STEM y competencias digitales.",
-    "description": "Sesiones en vivo personalizadas en áreas STEM y competencias digitales, con seguimiento y recursos de repaso.",
-    "image": "img/servicio-4.jpg",
+    "cardSummary": "Sesiones personalizadas en áreas STEM",
+    "description": "Clases virtuales personalizadas con seguimiento continuo y material de apoyo para fortalecer tus conocimientos.",
+    "image": "img/Redaccion_contenidos.jpg",
     "included": [
       "Entrega profesional del servicio",
       "Material de repaso incluido",
@@ -74,9 +74,9 @@
     "price": "Desde $320.000 COP",
     "rating": 4.8,
     "reviewCount": 32,
-    "cardSummary": "Revisión de contratos y orientación en propiedad intelectual.",
-    "description": "Revisión de contratos, constitución de sociedad y orientación en propiedad intelectual para proyectos digitales.",
-    "image": "img/servicio-5.jpg",
+    "cardSummary": "Asesoría en contratos y propiedad intelectual",
+    "description": "Te ayudamos con revisión de contratos, creación de empresa y protección legal para tu negocio digital.",
+    "image": "img/Soluciones_E-commerce.jpg",
     "included": [
       "Revisión documental",
       "Recomendaciones claras",
@@ -91,14 +91,14 @@
     "price": "Desde $1.200.000 COP",
     "rating": 4.9,
     "reviewCount": 61,
-    "cardSummary": "Naming, paleta y manual básico de marca.",
-    "description": "Naming, paleta, tipografías y manual básico de marca para alinear tu presencia web y redes sociales.",
-    "image": "img/servicio-6.jpg",
+    "cardSummary": "Construye una marca sólida y profesional",
+    "description": "Creamos la identidad visual de tu marca: nombre, colores, tipografías y manual de uso para destacar en el mercado.",
+    "image": "img/Identidad_marca.jpg",
     "included": [
       "Propuesta de identidad",
-      "Paleta y tipografías",
-      "Manual básico de marca",
-      "Archivos exportables"
+      "Paleta de colores y tipografías",
+      "Manual de marca",
+      "Archivos listos para uso"
     ]
   }
 ]
