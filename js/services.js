@@ -6,12 +6,11 @@ async function loadServices() {
     const container = document.getElementById("services-container");
     if (!container) return;
 
-    //Obtener el parametro de la busqueda del servicio
-
+    // 🔍 Obtener parámetro de búsqueda
     const params = new URLSearchParams(window.location.search);
     const query = params.get("q")?.toLowerCase() || "";
 
-    // Aplicación del filtro para encontrar el servicio
+    // 🔎 Filtrar servicios
     const filteredServices = services.filter((s) => {
       return (
         s.name.toLowerCase().includes(query) ||
@@ -19,7 +18,8 @@ async function loadServices() {
         s.description.toLowerCase().includes(query)
       );
     });
-// Si no hay resultados del servicio buscado
+
+    // 🚫 Sin resultados
     if (filteredServices.length === 0) {
       container.innerHTML = `
         <p style="text-align:center; width:100%;">
@@ -49,6 +49,14 @@ async function loadServices() {
             <a href="service-detail.html?id=${s.id}">
               <img src="${s.image}" alt="${s.name}">
             </a>
+
+            <!-- ❤️ BOTÓN FAVORITO -->
+            <button 
+              class="fav-heart-btn card-fav-float"
+              data-favorite-id="${s.id}"
+              onclick="toggleFavoriteFromBtn(this, event)">
+            </button>
+
           </div>
 
           <div class="card-body-pad">
@@ -74,7 +82,11 @@ async function loadServices() {
       `;
     });
 
+    // 🔥 Render
     container.innerHTML = html;
+
+    // ❤️ Activar corazones (MUY IMPORTANTE)
+    initFavoriteHeartsInDocument();
 
   } catch (error) {
     console.error("Error cargando servicios:", error);
