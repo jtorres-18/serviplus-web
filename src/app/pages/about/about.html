@@ -1,0 +1,62 @@
+<header class="site-header">
+  <nav class="navbar" aria-label="Principal">
+    <a routerLink="/" class="logo">ServiPlus</a>
+    <ul class="nav-links">
+      <li><a routerLink="">Inicio</a></li>
+      <li><a routerLink="/services">Servicios</a></li>
+      <li><a routerLink="/favorites">Favoritos</a></li>
+      <li><a routerLink="/contact">Contacto</a></li>
+      <li><a routerLink="/nosotros">Nosotros</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="container">
+  <h1>Nosotros</h1>
+  <div class="prose">
+    <p><strong>ServiPlus</strong> es una aplicación web tipo catálogo para la visualización de <strong>servicios digitales</strong> en categorías como tecnología, educación y servicios profesionales, tal como describe el escenario académico del proyecto.</p>
+    <p>El sistema permite explorar un listado en grid, abrir el <strong>detalle</strong> de cada servicio, guardar favoritos en el navegador (<strong>localStorage</strong>) y usar un formulario de <strong>contacto</strong> con validaciones básicas.</p>
+    <p>La interfaz prioriza usabilidad, simplicidad y una navegación clara entre las vistas: inicio, servicios, detalle, favoritos, contacto y esta página informativa.</p>
+    <p class="prose-cta"><a routerLink="/services" class="link-more">Ir al catálogo →</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a routerLink="/" class="logo logo-footer">ServiPlus</a>
+      <p>Catálogo web para explorar servicios digitales con claridad y buenas prácticas de usabilidad.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Empresa</h3>
+      <ul>
+        <li><a routerLink="/nosotros">Nosotros</a></li>
+        <li><a routerLink="/services">Servicios</a></li>
+        <li><a routerLink="/contact">Contacto</a></li>
+        <li><a routerLink="/favorites">Favoritos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Soporte</h3>
+      <ul>
+        <li><a routerLink="contact">Ayuda</a></li>
+        <li><a routerLink="/contact">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Legal</h3>
+      <ul>
+        <li><a routerLink="#">Privacidad</a></li>
+        <li><a routerLink="/Terminos">Términos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="social-links" aria-label="Redes sociales">
+      <a routerLink="#" aria-label="Facebook">FB</a>
+      <a routerLink="#" aria-label="Instagram">IG</a>
+      <a routerLink="#" aria-label="X">X</a>
+    </div>
+    <p class="copyright">© 2026 ServiPlus. Todos los derechos reservados.</p>
+  </div>
+</footer>

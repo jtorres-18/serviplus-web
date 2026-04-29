@@ -1,0 +1,139 @@
+<header class="site-header">
+  <nav class="navbar" aria-label="Principal">
+
+    <a routerLink="/" class="logo">ServiPlus</a>
+
+    <ul class="nav-links">
+      <li><a routerLink="/">Inicio</a></li>
+      <li><a routerLink="/services">Servicios</a></li>
+      <li><a routerLink="/favorites">Favoritos</a></li>
+      <li><a routerLink="/contact">Contacto</a></li>
+      <li><a routerLink="/nosotros">Nosotros</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero-split" aria-labelledby="hero-title">
+    <div class="hero-split-inner">
+
+      <div class="hero-copy">
+        <h1 id="hero-title">Explora servicios digitales en un solo lugar</h1>
+
+        <p class="hero-lead">
+          ServiPlus reúne ofertas de tecnología, educación y servicios profesionales para que compares, guardes favoritos y contactes de forma sencilla.
+        </p>
+
+        <form class="hero-search" action="services" method="get">
+          <label class="visually-hidden" for="q">Buscar servicio</label>
+
+          <div class="hero-search-field">
+            <svg class="hero-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+            <input type="search" id="q" name="q" placeholder="Buscar en el catálogo..." autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn-hero-search">Buscar</button>
+        </form>
+
+        <p class="hero-cta-inline">
+          <a routerLink="/services" class="link-more">Ver todo el catálogo →</a>
+        </p>
+      </div>
+
+      <div class="hero-media">
+        <img src="img/imagen1.jpeg" width="540" height="640"
+          alt="Ilustración o fotografía representativa de servicios digitales">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured-services section" id="servicios-destacados" aria-labelledby="featured-heading">
+    <div class="section-inner featured-services__inner">
+
+      <header class="featured-services__head">
+        <div class="featured-services__titles">
+          <h2 id="featured-heading" class="featured-services__title">Featured Services</h2>
+          <p class="featured-services__subtitle">Popular services from top-rated professionals</p>
+        </div>
+
+        <a routerLink="/services" class="featured-services__view-all">
+          View All Services <span aria-hidden="true">→</span>
+        </a>
+      </header>
+
+      <div id="featured-container" class="featured-services__grid"></div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner" aria-labelledby="cta-title">
+    <div class="cta-banner-inner">
+      <h2 id="cta-title">¿Listo para encontrar tu próximo servicio?</h2>
+      <p>
+        Navega el catálogo, revisa el detalle de cada oferta y contáctanos cuando quieras dar el siguiente paso.
+      </p>
+      <a routerLink="/services" class="btn-cta-pro">Explorar servicios</a>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER LIMPIO -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <a routerLink="/" class="logo logo-footer">ServiPlus</a>
+      <p>
+        Catálogo web para explorar servicios digitales con claridad y buenas prácticas de usabilidad.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Empresa</h3>
+      <ul>
+        <li><a routerLink="/nosotros">Nosotros</a></li>
+        <li><a routerLink="/services">Servicios</a></li>
+        <li><a routerLink="/contact">Contacto</a></li>
+        <li><a routerLink="/favorites">Favoritos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Soporte</h3>
+      <ul>
+        <li><a routerLink="/contact">Ayuda</a></li>
+        <li><a routerLink="/contact">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Legal</h3>
+      <ul>
+        <li><a routerLink="#">Privacidad</a></li>
+        <li><a routerLink="/terminos">Términos</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="social-links" aria-label="Redes sociales">
+      <a routerLink="#" aria-label="Facebook">FB</a>
+      <a routerLink="#" aria-label="Instagram">IG</a>
+      <a routerLink="#" aria-label="X">X</a>
+    </div>
+
+    <p class="copyright">
+      © 2026 ServiPlus. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
