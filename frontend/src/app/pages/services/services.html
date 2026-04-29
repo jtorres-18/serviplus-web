@@ -1,0 +1,28 @@
+
+<section class="container">
+  <h1>Listado de servicios</h1>
+
+  <p class="container-lead">
+    Explora el catálogo para ver nuestros servicios
+  </p>
+
+  <!-- Angular reemplaza JS con *ngFor -->
+  <div class="grid">
+
+    <div class="card" *ngFor="let s of services">
+      <img [src]="s.image" [alt]="s.name">
+
+      <h3>{{ s.name }}</h3>
+
+      <p>${{ s.price }}</p>
+
+      <a [routerLink]="['/services', s.id]">
+      Ver detalle
+      </a>
+      <button (click)="addFavorite(s.id)">
+        ❤️ Guardar
+      </button>
+    </div>
+
+  </div>
+</section>

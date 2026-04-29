@@ -1,0 +1,98 @@
+
+<main>
+  <!-- HERO -->
+  <section class="hero-split" aria-labelledby="hero-title">
+    <div class="hero-split-inner">
+
+      <div class="hero-copy">
+        <h1 id="hero-title">Explora servicios digitales en un solo lugar</h1>
+
+        <p class="hero-lead">
+          ServiPlus reúne ofertas de tecnología, educación y servicios profesionales para que compares, guardes favoritos y contactes de forma sencilla.
+        </p>
+
+        <!-- FORM (sin action HTML, navegación con Angular) -->
+        <form class="hero-search" (submit)="$event.preventDefault()">
+          <label class="visually-hidden" for="q">Buscar servicio</label>
+
+          <div class="hero-search-field">
+            <svg class="hero-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <input type="search" id="q" placeholder="Buscar en el catálogo..." autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn-hero-search" routerLink="/services">
+            Buscar
+          </button>
+        </form>
+
+        <p class="hero-cta-inline">
+          <a routerLink="/services" class="link-more">
+            Ver todo el catálogo →
+          </a>
+        </p>
+      </div>
+
+      <div class="hero-media">
+        <img src="assets/img/imagen1.jpeg" alt="Servicios digitales">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED (estático por ahora) -->
+  <section class="featured-services section">
+    <div class="section-inner featured-services__inner">
+
+      <header class="featured-services__head">
+        <div class="featured-services__titles">
+          <h2 class="featured-services__title">Featured Services</h2>
+          <p class="featured-services__subtitle">Popular services from top-rated professionals</p>
+        </div>
+
+        <a routerLink="/services" class="featured-services__view-all">
+          View All Services →
+        </a>
+      </header>
+
+      <div class="featured-services__grid">
+
+        <div class="card">
+          <img src="assets/img/desarrollo_web.jpg">
+          <h3>Web Development</h3>
+          <p>$2,500</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Diseno_app.jpg">
+          <h3>Mobile App Design</h3>
+          <p>$1,800</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Optimizacion_Seo.jpg">
+          <h3>SEO Optimization</h3>
+          <p>$800</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="cta-banner-inner">
+      <h2>¿Listo para encontrar tu próximo servicio?</h2>
+      <p>Navega el catálogo, revisa el detalle de cada oferta y contáctanos cuando quieras dar el siguiente paso.</p>
+
+      <a routerLink="/services" class="btn-cta-pro">
+        Explorar servicios
+      </a>
+    </div>
+  </section>
+</main>
+
